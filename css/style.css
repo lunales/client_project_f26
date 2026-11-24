@@ -471,9 +471,53 @@
   }
 
  /* end page */
-.end-intro{
-  text-align: center;
-}
+  .end-intro {
+    text-align: center;
+  }
 
+  .interview-practice h2,
+  .interview-practice p {
+    text-align: center;
+  } 
+
+  .interview-practice form {
+    margin: 30px;
+    padding: 20px;
+    background-color: var(--soft-blue);
+    border: 2px solid var(--michigan-maize);
+    border-radius: 12px;
+  }
+
+  .interview-practice legend {
+    font-size: larger;
+    font-weight: bold;
+    color: var(--michigan-blue);
+  }
+
+  .interview-practice label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .interview-practice textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: var(--white);
+    border: 1px solid var(--michigan-blue);
+    border-radius: 6px;
+  }
+
+  .interview-practice button {  
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: var(--michigan-blue);
+    color: var(--white);
+    border-radius: 20px;
+    font-weight: bold;
+    border: none;
+  }
 
 }
