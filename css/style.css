@@ -473,9 +473,11 @@
  /* end page */
   .end-intro {
     text-align: center;
-  }
+  } 
+}
 
-  .interview-practice h2,
+/* forms feature (both mobile and desktop) */
+.interview-practice h2,
   .interview-practice p {
     text-align: center;
   } 
@@ -519,5 +521,3 @@
     font-weight: bold;
     border: none;
   }
-
-}
