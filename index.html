@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Engaged Learning Resources | UMSI</title>
-    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">  
 </head>
 <body>
@@ -14,7 +14,7 @@
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" width="200" height="200">
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
                 <li><a href="prep.html">Preparing for Your Experience</a></li>
                 <li><a href="during.html">During Your Experience</a></li>
                 <li><a href="end.html">Ending Your Experience</a></li>
@@ -24,8 +24,8 @@
   </header>
 
   <main id="main">
-    <section>
-      <h2>Build Skills. Work with Partners. Have an Impact.</h2>
+    <section class="home-intro">
+      <h2>Build Skills. <br>Work with Partners. <br>Have an Impact.</h2>
       <p>
        The UMSI Engaged Learning Office connects students with opportunities to apply classroom knowledge to real challenges. Use this site to prepare for your experience, manage your work, and reflect on what you learned.
       </p>
@@ -33,7 +33,7 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/81ZO9RfIJEQ?si=tBp82YWZMl1u7CVS" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
 
-    <section>
+    <section class="why-resource">
       <h2>Why Use This Resource?</h2>
       <p>Real-world projects rarely follow a perfect plan. This site helps you find the right guidance when you need it, so you can spend less time searching for materials and more time learning, collaborating, and moving your project forward.</p>
       <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student wears a UMSI backpack in fall on the drag." width="560" height="400">
@@ -45,7 +45,7 @@
       </ul>
     </section>
 
-    <section>
+    <section class="stage-guide">
       <h2>Guidance for Every Stage</h2>
       <p>Engaged learning projects can change as new needs, constraints, and insights emerge. Find guidance for the stage of work you are navigating <b>now.</b></p>
       <article>
@@ -67,7 +67,7 @@
       </article>
     </section>
 
-    <section>
+    <section class="featured-programs">
       <h2>Featured Programs</h2>
       <p>Explore opportunities to collaborate with organizations, communities, student teams, and partners in Michigan and beyond.</p>
       <article>
@@ -101,7 +101,7 @@
       </article>
     </section>
 
-    <section>
+    <section class="about-elo">
       <h2>About the Engaged Learning Office</h2>
       <p>The Engaged Learning Office works with partners across industries and sectors, from technology companies to grassroots nonprofits and cultural heritage institutions, to provide project-based opportunities for UMSI students.</p>
       <p>Its mission is to facilitate transformational engaged learning experiences and enable innovative, sustainable, and mutually beneficial information solutions for local and global communities.</p>
@@ -122,7 +122,12 @@
     <address>
       <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
     </address>
-    <p>&copy; 2026 Regents of the University of Michigan</p>
+    <p>&copy; <span id="year"></span> Regents of the University of Michigan</p>
   </footer>
+<!-- Dynamic copyright year from CodexWorld
+https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/ -->
+<script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
 </body>
 </html>

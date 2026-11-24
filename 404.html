@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | UMSI Engaged Learning Office</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to Main Content</a>
+
+  <header>
+    <h1>UMSI Engaged Learning Office</h1>
+  </header>
+
+  <main id="main">
+    <section class="error-page">
+        <h2><span class="error-number">404</span> Oh no, this is awkward...</h2>
+      
+        <article>
+          <p>We couldn’t find the page you're looking for. Head back home to pick up where you left off.</p>
+          <a href="index.html">Back to Home</a>
+        </article>
+      </section>
+  </main>
+
+  <footer>
+    <p>University of Michigan School of Information | <a href="https://www.si.umich.edu/programs/engaged-learning/about-engaged-learning-office">Engaged Learning Office</a></p>
+    <address>
+      <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
+    </address>
+    <p>&copy; <span id="year"></span> Regents of the University of Michigan</p>
+  </footer>
+<!-- Dynamic copyright year from CodexWorld
+https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/ -->
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+</body>
+</html>

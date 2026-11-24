@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wrap-Up, Impact & Next Steps!</title>
-    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,28 +17,25 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="prep.html">Preparing for Your Experience</a></li>
                 <li><a href="during.html">During Your Experience</a></li>
-                <li><a href="end.html" class="active">Ending Your Experience</a></li>
+                <li><a href="end.html" class="active" aria-current="page">Ending Your Experience</a></li>
             </ul>
         </nav>
     <h1>Wrap-Up, Impact & Next Steps!</h1>
   </header>
 
 <main id="main">
-  <section>
+  <section class="end-intro">
     <h2>Completing, Reflecting, and Translating Your Impact</h2>
     <p>Close your project responsibly, evaluate your outcomes, and articulate your real-world experience for your future career.</p>
   </section>
 
-  <section>
+  <section class="why-work">
     <h2>The Power of Closing Well and Reflecting Deeply</h2>
-    <p>A project is not complete simply because the final deliverable has been handed over. The final stages—closing, reflecting, and translating—are what transform a transient project into <b>lasting organizational value and personal career momentum.</b></p>
-    <p>Responsible handoffs ensure that partners are not left with abandoned tools or undocumented systems they cannot maintain. Simultaneously, structured reflection forces you to pause and ask: <i>What did I learn about my technical skills, my teamwork style, and the ethical impact of my work?</i> Without reflection, experience is just something that happened to you; with reflection, experience becomes expertise. Learning to translate complex, messy project narratives into clear resume bullets and portfolio case studies is what turns your UMSI education into your greatest professional asset.</p>
-    <p><b>Note for Student Developers:</b> Select the track below that aligns best with your team's build goals. You can implement track A, B, or C as the primary focus of Page 3.</p>
-  </section>
-
+    <p>A project is not complete simply because the final deliverable has been handed over. The final stages—closing, reflecting, and translating—are what transform a transient project into <b>lasting organizational value and personal career momentum.</b> <br><br> Responsible handoffs ensure that partners are not left with abandoned tools or undocumented systems they cannot maintain. Simultaneously, structured reflection forces you to pause and ask: <i>What did I learn about my technical skills, my teamwork style, and the ethical impact of my work?</i> Without reflection, experience is just something that happened to you; with reflection, experience becomes expertise. Learning to translate complex, messy project narratives into clear resume bullets and portfolio case studies is what turns your UMSI education into your greatest professional asset. <br><br> <b>Note for Student Developers:</b> Select the track below that aligns best with your team's build goals. You can implement track A, B, or C as the primary focus of Page 3.</p>
   <img src="images/UMSI_ViewbookMSI2026_26.jpg" alt="Two students next to each other looking at a laptop" width="600" height="400">
-
-  <section>
+  </section>
+  
+  <section class="stage-guide prep-phase">
     <h2>Track A: Ending the Experience (Responsible Offboarding & Handoff)</h2>
     <article>
       <h3>Value & Narrative</h3>
@@ -64,7 +61,7 @@
     </article>
   </section>
 
-  <section>
+  <section class="stage-guide phase-two">
     <h2>Track B: After the Experience (Career Integration & Portfolios)</h2>
     <article>
       <h3>Value & Narrative</h3>
@@ -96,8 +93,12 @@
   <address>
     <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
   </address>
-  <p>&copy; 2026 Regents of the University of Michigan</p>
+  <p>&copy; <span id="year"></span> Regents of the University of Michigan</p>
 </footer>
-
+<!-- Dynamic copyright year from CodexWorld
+https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/ -->
+<script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
 </body>
 </html>

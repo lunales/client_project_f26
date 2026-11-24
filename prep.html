@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preparing & Starting Your Journey</title>
-    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
         <nav>
             <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="prep.html" class="active">Preparing for Your Experience</a></li>
+              <li><a href="prep.html" class="active" aria-current="page">Preparing for Your Experience</a></li>
               <li><a href="during.html">During Your Experience</a></li>
               <li><a href="end.html">Ending Your Experience</a></li>
             </ul>
@@ -24,20 +24,18 @@
   </header>
 
 <main id="main">
-  <section>
+  <section class="prep-intro">
     <h2>Launch Your Engaged Learning Journey</h2>
     <p>Transform your academic knowledge into real-world impact. Use this guide to understand your project context, evaluate team readiness, establish expectations, and begin a productive partnership.</p>
   </section>
 
-  <section>
+  <section class="why-work">
     <h2>Why the Work Starts Before the Project</h2>
-    <p>Engaged learning at UMSI is fundamentally different from traditional classroom assignments. You are stepping out of controlled environments and into complex, unscripted ecosystems where technical solutions intersect with human lives, organizational cultures, and real community needs.</p>
-    <p>The initial phase of a project is rarely about jumping straight into execution—it is about building the foundation for ethical, sustainable engagement. Taking time to reflect on your own positionality, audit your team’s collective skills, and listen deeply to your partner’s goals prevents project failure down the line. When you ground your project in mutual respect, clear boundaries, and honest communication from Day 1, you transform a simple class deliverable into a reciprocal partnership that creates authentic value for everyone involved.</p>
+    <p>Engaged learning at UMSI is fundamentally different from traditional classroom assignments. You are stepping out of controlled environments and into complex, unscripted ecosystems where technical solutions intersect with human lives, organizational cultures, and real community needs.<br> <br>The initial phase of a project is rarely about jumping straight into execution—it is about building the foundation for ethical, sustainable engagement. Taking time to reflect on your own positionality, audit your team’s collective skills, and listen deeply to your partner’s goals prevents project failure down the line. When you ground your project in mutual respect, clear boundaries, and honest communication from Day 1, you transform a simple class deliverable into a reciprocal partnership that creates authentic value for everyone involved.</p>
+    <img src="images/UMSI_ViewbookPHD2026_15.jpg" alt="Two students doing work on their desktops" width="600" height="400">
   </section>
 
-  <img src="images/UMSI_ViewbookPHD2026_15.jpg" alt="Two students doing work on their desktops" width="600" height="400">
-
-  <section>
+  <section class="stage-guide prep-phase">
     <h2>Phase 1: Preparing for the Experience</h2>
     <p><i>Setting the foundation, understanding community context, and evaluating team readiness before work begins.</i></p>
     <article>
@@ -68,10 +66,10 @@
     </article>
   </section>
 
-  <section>
+  <section class="stage-guide phase-two">
     <h2>Phase 2: Starting the Experience</h2>
+    <p><i>Establishing professional communication, conducting initial meetings, and finalizing partnership agreements.</i></p>
     <article>
-      <p><i>Establishing professional communication, conducting initial meetings, and finalizing partnership agreements.</i></p>
       <h3>Value & Narrative</h3>
       <p>First impressions shape the trajectory of a partnership. The starting phase is where abstract project ideas turn into structured, professional commitments. By establishing clear team contracts, co-creating agendas, and aligning on project scope early, you build <b>psychological safety within your team and trust with your client</b>. Learning how to navigate early ambiguity is one of the most valuable professional capabilities you will gain at UMSI.</p>
     </article>
@@ -104,8 +102,12 @@
   <address>
     <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
   </address>
-  <p>&copy; 2026 Regents of the University of Michigan</p>
+  <p>&copy; <span id="year"></span> Regents of the University of Michigan</p>
 </footer>
-
+<!-- Dynamic copyright year from CodexWorld
+https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/ -->
+<script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
 </body>
 </html>

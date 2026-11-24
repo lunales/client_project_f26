@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>During the Experience</title>
-    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="prep.html">Preparing for Your Experience</a></li>
-                <li><a href="during.html" class="active">During Your Experience</a></li>
+                <li><a href="during.html" class="active" aria-current="page">During Your Experience</a></li>
                 <li><a href="end.html">Ending Your Experience</a></li>
             </ul>
         </nav>
@@ -24,20 +24,18 @@
   </header>
 
 <main id="main">
-  <section>
+  <section class="during-intro">
     <h2>Navigating Your Active Project</h2>
     <p>Master the art of adaptive project management, human-centered fieldwork, and constructive feedback as you execute your project in real time.</p>
   </section>
 
-  <section>
+  <section class="why-work">
     <h2>The Value of Navigating Friction & Active Execution</h2>
-    <p>The middle of an engaged learning project is where real growth happens—and where real challenges surface. Real-world projects rarely follow a straight line. Requirements shift, team dynamics evolve, clients face unexpected internal constraints, and research data yields surprising results.</p>
-    <p>The true value of this phase lies in developing <b>resilience, adaptability, and ethical agility</b>. Learning to manage "scope creep," navigate mid-project feedback, and re-align technical decisions with human needs are the exact experiences that distinguish top UMSI graduates. When you view friction not as a barrier, but as a natural part of the applied learning process, you develop the strategic problem-solving skills needed in modern information careers.</p>
-  </section>
-
+    <p>The middle of an engaged learning project is where real growth happens—and where real challenges surface. Real-world projects rarely follow a straight line. Requirements shift, team dynamics evolve, clients face unexpected internal constraints, and research data yields surprising results. <br> The true value of this phase lies in developing <b>resilience, adaptability, and ethical agility</b>. Learning to manage "scope creep," navigate mid-project feedback, and re-align technical decisions with human needs are the exact experiences that distinguish top UMSI graduates. When you view friction not as a barrier, but as a natural part of the applied learning process, you develop the strategic problem-solving skills needed in modern information careers.</p>
   <img src="images/UMSI_ViewbookMSI2026_14.jpg" alt="A group of students sitting at a table and having a work meeting" width="600" height="400">
-
-  <section>
+  </section>
+  
+  <section class="phase-three">
     <h2>Phase 3: Managing & Executing in the Field</h2>
     <p><i>Conducting research, tracking progress, and maintaining clear communication with project sponsors.</i></p>
     <article>
@@ -106,8 +104,12 @@
   <address>
     <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
   </address>
-  <p>&copy; 2026 Regents of the University of Michigan</p>
+  <p>&copy; <span id="year"></span> Regents of the University of Michigan</p>
 </footer>
-
+<!-- Dynamic copyright year from CodexWorld
+https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/ -->
+<script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
 </body>
 </html>
